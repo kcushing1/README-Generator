@@ -1,0 +1,3 @@
+licensing information from:
+GitHub, Inc. "Choose an open source license." https://choosealicense.com/
+
