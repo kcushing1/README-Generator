@@ -6,7 +6,7 @@ const inquire = require("inquirer");
 const questions = [
   "What is the project title?",
   "Provide a short description.",
-  "Provide a list of all the contents.",
+  "Provide a list of all the contents, separated by a comma.",
   "What are the installation directions?",
   "What is the practical application?",
   {
@@ -36,6 +36,58 @@ function init() {
         type: "input",
         message: questions[0],
         name: "title",
+      },
+      {
+        type: "input",
+        message: questions[1],
+        name: "description",
+      },
+      {
+        type: "input",
+        message: questions[2],
+        name: "contentsString",
+      },
+      {
+        type: "input",
+        message: questions[3],
+        name: "installation",
+      },
+      {
+        type: "input",
+        message: questions[4],
+        name: "application",
+      },
+      {
+        type: "list",
+        message: questions[5].ask,
+        choices: [
+          questions[5].a,
+          questions[5].b,
+          questions[5].c,
+          questions[5].d,
+          questions[5].e,
+        ],
+        name: "license",
+      },
+      {
+        type: "input",
+        message: questions[6],
+        name: "contribute",
+      },
+      {
+        type: "input",
+        message: questions[7],
+        name: "test",
+      },
+      {
+        type: "input",
+        message: questions[8],
+        name: "github",
+      },
+      {
+        type: "input",
+        message: questions[9],
+        name: "email",
       },
     ])
     .then((response) => {
