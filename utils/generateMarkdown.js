@@ -24,7 +24,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
   ## Questions
-  ${data.github}
+  https://github.com/${data.github}
   If you have any additional questions, please send an email to ${data.email}
 `;
 }
@@ -43,6 +43,7 @@ function chooseLicense(data) {
   }
 }
 
+//see cited.txt
 function licenseShield(data) {
   if (data.license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";

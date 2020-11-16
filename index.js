@@ -24,7 +24,11 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(readme, data) {
+  fs.writeFile(readme + ".md", generateMarkdown(data), {}, (err) =>
+    console.log(err)
+  );
+}
 
 // function to initialize program
 function init() {
@@ -85,9 +89,7 @@ function init() {
       },
     ])
     .then((data) => {
-      fs.writeFile("README.md", generateMarkdown(data), {}, (err) =>
-        console.log(err)
-      );
+      writeToFile("README", data);
     });
 }
 
