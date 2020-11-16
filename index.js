@@ -92,9 +92,10 @@ function init() {
         name: "email",
       },
     ])
-    .then((response) => {
-      console.log(response);
-      console.log(generateMarkdown);
+    .then((data) => {
+      fs.writeFile("README.md", generateMarkdown(data), {}, (err) =>
+        console.log(err)
+      );
     });
 }
 

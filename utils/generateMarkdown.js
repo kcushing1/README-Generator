@@ -4,7 +4,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
-  ####${data.contentsString.split(",").join(" ####")}
+  ####${data.contentsString.split(",").join(" #### ")}
   ## Installation
   ${data.installation}
   ## usage
