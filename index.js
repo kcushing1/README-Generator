@@ -7,7 +7,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   "What is the project title?",
   "Provide a short description.",
-  "Provide a list of all the contents, separated by a comma.",
   "What are the installation directions?",
   "What is the practical application?",
   {
@@ -47,48 +46,43 @@ function init() {
       {
         type: "input",
         message: questions[2],
-        name: "contentsString",
-      },
-      {
-        type: "input",
-        message: questions[3],
         name: "installation",
       },
       {
         type: "input",
-        message: questions[4],
+        message: questions[3],
         name: "application",
       },
       {
         type: "list",
-        message: questions[5].ask,
+        message: questions[4].ask,
         choices: [
-          questions[5].a,
-          questions[5].b,
-          questions[5].c,
-          questions[5].d,
-          questions[5].e,
+          questions[4].a,
+          questions[4].b,
+          questions[4].c,
+          questions[4].d,
+          questions[4].e,
         ],
         name: "license",
       },
       {
         type: "input",
-        message: questions[6],
+        message: questions[5],
         name: "contribute",
       },
       {
         type: "input",
-        message: questions[7],
+        message: questions[6],
         name: "test",
       },
       {
         type: "input",
-        message: questions[8],
+        message: questions[7],
         name: "github",
       },
       {
         type: "input",
-        message: questions[9],
+        message: questions[8],
         name: "email",
       },
     ])
