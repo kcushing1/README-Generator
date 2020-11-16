@@ -1,7 +1,7 @@
-# skjadfn
+# README Generator
   ## Description
-  asdkjf
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  A quick, command line prompt-based way to produce a professional README file for all types of projects
+   
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,15 +10,15 @@
   * [Tests](#tests)
   * [Questions](#questions)
   ## Installation
-  sadkjfb
+  Just run the file!
   ## Usage
-  dsjafb
+  It runs in the command line on node.js
   ## License
-  This project is licensed with GNU GPLv3
+  No license has been selected for this project.
   ## Contributing
-  dsjf
+  Contact me at the email posted below
   ## Tests
-  sdakjb
+  No tests have been thus far
   ## Questions
-  sjdaf
-  If you have any additional questions, please send an email to adsknf
+  https://github.com/kcushing1
+  If you have any additional questions, please send an email to kasey.cushing@gmail.com
