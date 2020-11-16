@@ -1,8 +1,9 @@
 const fs = require("fs");
 const inquire = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-//see cited.txt
+//see cited.txt for licensing info source
 const questions = [
   "What is the project title?",
   "Provide a short description.",
@@ -12,7 +13,8 @@ const questions = [
   {
     ask: "Select which license you would like to use:",
     a: "MIT License - a safe, standard choice",
-    b: "GNU GPLv3 - lets you share quite far except for closed source versions",
+    b:
+      "GNU GPLv3 - lets you share almost everything except for closed source versions",
     c:
       "Apache License 2.0 - for Apache, Cloud Native Computing Foundation, and others",
     d: "ISC License - for sharing far and wide",
@@ -92,6 +94,7 @@ function init() {
     ])
     .then((response) => {
       console.log(response);
+      console.log(generateMarkdown);
     });
 }
 
