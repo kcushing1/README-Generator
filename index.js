@@ -7,20 +7,18 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   "What is the project title?",
   "Provide a short description.",
-  "What are the installation directions?",
-  "What is the practical application?",
+  "What are the installation instructions?",
+  "How does one use this application?",
   {
     ask: "Select which license you would like to use:",
-    a: "MIT License - a safe, standard choice",
-    b:
-      "GNU GPLv3 - lets you share almost everything except for closed source versions",
-    c:
-      "Apache License 2.0 - for Apache, Cloud Native Computing Foundation, and others",
-    d: "ISC License - for sharing far and wide",
-    e: "Something else, not listied here - to be added later",
+    a: "MIT License",
+    b: "GNU GPLv3",
+    c: "Apache License 2.0s",
+    d: "ISC License",
+    e: "None of the above",
   },
   "How can someone contribute?",
-  "How can someone test this project?",
+  "What tests have you made for this app?",
   "What is your GitHub username?",
   "What is your email?",
 ];
