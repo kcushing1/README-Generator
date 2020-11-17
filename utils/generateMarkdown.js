@@ -25,10 +25,12 @@ function generateMarkdown(data) {
   ${data.test}
   ## Questions
   https://github.com/${data.github}
+
   If you have any additional questions, please send an email to ${data.email}
 `;
 }
 
+//license section wording
 function chooseLicense(data) {
   if (data.license === "MIT") {
     return "This project is licensed with MIT";
@@ -43,6 +45,7 @@ function chooseLicense(data) {
   }
 }
 
+//adding a shield icon representing the license
 //see cited.txt
 function licenseShield(data) {
   if (data.license === "MIT") {
