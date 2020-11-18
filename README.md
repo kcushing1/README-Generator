@@ -6,6 +6,8 @@
 
 A quick and easy tool to produce a README for any project type.
 
+![README Generator Demo](./assets/README-Generator-Demo.gif)
+
 ## Table of Contents
 
 - [Installation](#installation)
