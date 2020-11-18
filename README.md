@@ -1,8 +1,10 @@
 # README Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
-A quick, command line prompt-based way to produce a professional README file for all types of projects
+A quick and easy tool to produce a README for any project type.
 
 ## Table of Contents
 
@@ -13,27 +15,25 @@ A quick, command line prompt-based way to produce a professional README file for
 - [Tests](#tests)
 - [Questions](#questions)
 
-![README Generator Demo](./assets/README-Generator-Demo.gif)
-
 ## Installation
 
-Just run the file!
+It requires Node.js
 
 ## Usage
 
-It runs in the command line on node.js
+Using the command line, type "node index.js" and answer the prompts about your project.
 
 ## License
 
-No license has been selected for this project.
+This project is licensed with MIT
 
 ## Contributing
 
-Contact me at the email posted below
+Contact the email provided below.
 
 ## Tests
 
-No tests have been thus far
+No tests have been made thus far.
 
 ## Questions
 
